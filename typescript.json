@@ -1,0 +1,86 @@
+{	
+	"Require": {
+        "prefix": "re",
+        "body": [
+		  "const $1 = require('$2');",
+		  "$0"         
+        ],
+        "description": "Require packages"
+	},
+	"Import": {
+        "prefix": "im",
+        "body": [
+		  "import $1 from '$2';",
+		  "$0"         
+        ],
+        "description": "Require packages"
+	},
+	"Gulp task": {
+        "prefix": "gt",
+        "body": [
+		  "gulp.task('$1', function($2) {",
+		  	"\t$0",
+		  "});"   
+        ],
+        "description": "Write gulp task"
+	},	
+	"Gulp watch": {
+		"prefix": "gw",
+		"body": [
+			"gulp.watch('$1', ['$2']);",
+			"$0"	        
+		],
+		"description": "Write gulp watch"
+	}, 
+	"Find Element": {
+		"prefix": "fe",
+		"body": [
+			"let $1 = await driver.findElement(By.$2('$3'));",
+			"$0"	        
+		],
+		"description": "Write gulp watch"
+	},
+	"Test suite": {
+		"prefix": "it",
+		"body": [
+			"it('$1', () => {",
+			"\t$2",
+			"});",
+			"$0"
+		]
+	},
+	"Short Function": {
+		"prefix": "sfn",
+		"body": [
+			"$1 ($2): $3 {",
+			"\t$4",
+			"}",
+			"$0"
+		]
+	},
+	"Class Constructor": {
+		"prefix": "con",
+		"body": [
+			"constructor($1) {",
+			"\t$2",
+			"}",
+			"$0"
+		]
+	},
+	"Class Declaration": {
+		"prefix": "class",
+		"body": [
+			"class $1 {",
+			"\t$0",
+			"}"		
+		]
+	},
+	"Const functions ES6": {
+		"prefix": "cf",
+		"body": [
+			"const $1 = ($2) => {",
+			"\t$3",
+			"}"		
+		]
+	}
+}

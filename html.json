@@ -1,0 +1,16 @@
+{
+	"String Interpolation": {
+		"prefix": "si",
+		"body": [
+			"{{ $1 }}"
+		],
+		"description": "Print string to html"
+	},
+	"Python Tag": {
+		"prefix": "tg",
+		"body": [
+			"{% $1 %}"			
+		],
+		"description": "Add tag to html"
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"Add shell code": {
+		"prefix": "sh",
+		"body": [
+			"```sh",
+			"$1",
+			"```",
+			"$2"
+		],
+		"description": "Create shell code"
+	},
+	"JavaScript Code": {
+		"prefix": "js",
+		"body": [
+			"```javascript",
+			"$1",
+			"```",
+			"$2"
+		],
+		"description": "Create javascript code"
+	}
+}
